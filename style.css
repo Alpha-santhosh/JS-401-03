@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide{
+    width: 800px;
+    height: 400px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.items{
+    display: none;
+}
+.items img{
+    width: 100%;
+    height: auto;
+}
+.active{
+    display: block;
+}   
+.btn{
+    width: 100%;
+    /* background-color: white; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.material-symbols-outlined{
+    font-size: 70px;
+    /* color: white; */
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+    transition-duration: 0.5s;
+}
